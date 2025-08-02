@@ -1,4 +1,4 @@
-# Chatbot TF-IDF – Analyse de discours présidentiels
+# Chatbot - TF-IDF (Python)
 
 Ce projet est un chatbot qui utilise les techniques de **TF-IDF** et de **similarité cosinus** pour générer des réponses à partir d'un corpus de discours de présidents français.  
 Il est conçu entièrement en Python, sans librairie externe autre que `math` et `os`, et le code est organisé en plusieurs fichiers qui ont chacun un rôle précis.
@@ -7,6 +7,7 @@ Il est conçu entièrement en Python, sans librairie externe autre que `math` et
 - Prétraitement de discours : nettoyage des caractères spéciaux
 - Calcul des matrices TF, IDF et TF-IDF
 - Similarité cosinus entre questions et documents
+- Fonctionnalités pour explorer le corpus, comme retrouver les noms des présidents, ou identifier les mots les plus fréquents
 - Génération automatique de réponses les plus pertinentes
 - Affichage optionnel de la matrice TF-IDF
 - Ajout facile de nouveaux discours au corpus
@@ -31,11 +32,7 @@ Le programme s'utilise en ligne de commande, avec affichage console.
 
 ## Ajouter de nouveaux discours
 
-Ajoutez un fichier au format :
-```
-Nomination_[NomDuPrésident][Numéro].txt
-```
-dans le dossier `speeches/` (ex: `Nomination_Macron2.txt`). Le fichier sera automatiquement traité au prochain lancement.
+Ajoutez un fichier au format `Nomination_[NomDuPrésident][Numéro].txt` dans le dossier `speeches/` (ex: `Nomination_Macron2.txt`). Le fichier sera automatiquement traité au prochain lancement.
 
 ---
 
